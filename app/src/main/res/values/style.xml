@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="common_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="common_match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="add_dialog" parent="@android:style/Theme.Dialog">
+        <!--<item name="android:windowFrame">@null</item>&lt;!&ndash; 边框 &ndash;&gt;-->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <!--<item name="android:windowIsTranslucent">false</item>&lt;!&ndash; 半透明 &ndash;&gt;-->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 灰背景 -->
+        <item name="android:backgroundDimAmount">0.5</item> <!--背景灰度值-->
+    </style>
+
+    <style name="tv_keyboard">
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">0.5dp</item>
+        <item name="android:layout_marginBottom">0.5dp</item>
+        <item name="android:background">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="ll_divider_horizontal">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">2</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/holo_blue_bright</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="tv_black_point_oval">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/pwd_selector</item>
+    </style>
+</resources>
