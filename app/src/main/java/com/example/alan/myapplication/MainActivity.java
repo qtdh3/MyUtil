@@ -105,10 +105,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void showPasswordDialog() {
-        Log.i(Tag,"before dialog init");
-        TestPassWordDialog testPassWordDialog=new TestPassWordDialog(this);
-        testPassWordDialog.create();
-        testPassWordDialog.show();
+        Log.i(Tag, "before dialog init");
+        TestPassWordDialog testPassWordDialog=new TestPassWordDialog(this,"69",new TestPassWordDialog.OnOkButtonClickedListener(){
+            @Override
+            public void onClicked(DialogInterface dialog, String pwd) {
+                if (pwd.length()==6){
+                    Log.i(Tag,"pwd="+pwd);
+                    dialog.dismiss();
+                }
+            }
+        });
+        testPassWordDialog.createAndShow();
         Log.i(Tag,"after_showPass");
     }
 
