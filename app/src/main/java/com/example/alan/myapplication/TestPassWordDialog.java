@@ -1,6 +1,7 @@
 package com.example.alan.myapplication;
 
-import android.animation.ObjectAnimator;
+//import android.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ObjectAnimator;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
