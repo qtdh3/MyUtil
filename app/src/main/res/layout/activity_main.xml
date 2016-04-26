@@ -13,7 +13,7 @@
         android:text="@string/app_name" />
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btn_start_plugin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Click To Start Plugin Activity" />
@@ -24,10 +24,69 @@
         style="@style/common_wrap_content"
         android:text="开始输入密码" />
 
-    <EditText
-        android:id="@+id/et_common"
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:maxLength="6" />
+        android:text="弹 普通提示 Dialog"
+        android:id="@+id/btn_show_message_dialog" />
+
+    <EditText
+        android:id="@+id/et_city_name"
+        style="@style/tv_simple_text_show"
+        android:hint="Please input the city name,like 苏州市 "/>
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/tv_send_http_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="发送Http请求"/>
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/tv_send_https_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Https请求"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_lon"
+            style="@style/tv_simple_text_show"
+            android:text="lon= "/>
+        <TextView
+            android:id="@+id/tv_level"
+            style="@style/tv_simple_text_show"
+            android:text="level= "/>
+        <TextView
+            android:id="@+id/tv_alevel"
+            style="@style/tv_simple_text_show"
+            android:text="alevel= "/>
+        <TextView
+            android:id="@+id/tv_lat"
+            style="@style/tv_simple_text_show"
+            android:text="lat= "/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="内存泄漏测试页"
+        android:background="#5f0"
+        android:id="@+id/tv_jumpto_leak_test" />
+    <TextView
+        android:id="@+id/tv_jump_to_loadMore_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="可扩展上拉加载更多-测试 "/>
+
 </LinearLayout>
